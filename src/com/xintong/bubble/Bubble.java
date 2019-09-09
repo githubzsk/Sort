@@ -1,5 +1,7 @@
 package com.xintong.bubble;
 
+import java.util.Arrays;
+
 /**
  * @ClassName Bubble
  * @Author Administrator
@@ -8,25 +10,26 @@ package com.xintong.bubble;
  */
 public class Bubble {
     public static void main(String[] args) {
-        Integer arr[] = {1,2,3,5,8,7,4,9,6};
-        BubbleSort(arr);
-        for (int i = 0; i <arr.length ; i++) {
-            System.out.print(arr[i]+" ");
-        }
+        Integer [] arr ={8,6,55,2,99,81,65,34,22,71,1,57};
+        bubbleSort(arr);
+        Arrays.stream(arr).forEach(System.out::print);
     }
-    public static void BubbleSort(Integer [] arr){
-        for (int i = 0; i <arr.length-1 ; i++) {
-            //
+
+    public static void bubbleSort(Integer [] arr){
+
+        for (int i = 0; i < arr.length - 1; i++) {
             boolean flag = false;
-            for (int j = 0; j <arr.length-i-1 ; j++) {
-                if (arr[j]>arr[j+1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if(arr[j] > arr[j + 1]){
+                    //如果有交换，说明还在排序
+                    //如果没有交换 ,说明已经拍好了  flag =false       ！flag=true  跳出循环
                     flag = true;
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
-            if (!flag){
+            if(!flag){
                 break;
             }
         }
