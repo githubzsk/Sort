@@ -1,4 +1,4 @@
-package com.xintong.sort;
+package com.xintong.bubble;
 
 /**
  * @ClassName Bubble
@@ -16,6 +16,7 @@ public class Bubble {
     }
     public static void BubbleSort(Integer [] arr){
         for (int i = 0; i <arr.length-1 ; i++) {
+            //
             boolean flag = false;
             for (int j = 0; j <arr.length-i-1 ; j++) {
                 if (arr[j]>arr[j+1]) {
