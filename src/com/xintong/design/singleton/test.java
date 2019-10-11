@@ -9,8 +9,8 @@ package com.xintong.design.singleton;
  */
 public class test {
     public static void main(String[] args) {
-        SimlpeSingnleton singnleton = SimlpeSingnleton.getInstance();
-        SimlpeSingnleton singnleton1 = SimlpeSingnleton.getInstance();
+        LazySingleton singnleton = LazySingleton.getInstance();
+        LazySingleton singnleton1 = LazySingleton.getInstance();
         System.out.println(singnleton .equals(singnleton1) );
     }
 }
