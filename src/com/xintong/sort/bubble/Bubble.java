@@ -1,4 +1,4 @@
-package com.xintong.bubble;
+package com.xintong.sort.bubble;
 
 import java.util.Arrays;
 

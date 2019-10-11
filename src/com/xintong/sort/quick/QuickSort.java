@@ -1,4 +1,4 @@
-package com.xintong.quick;
+package com.xintong.sort.quick;
 
 import java.util.stream.Stream;
 

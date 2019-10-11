@@ -1,4 +1,4 @@
-package com.xintong.select;
+package com.xintong.sort.select;
 
 import java.util.Arrays;
 
